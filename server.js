@@ -8,8 +8,10 @@ const server = new ApolloServer({
     resolvers: resolverList
 })
 
+
 const { url } = await startStandaloneServer(server, {
     listen: { port: 4000 }
 })
 
-console.log("server startedat port 4000", { url })
+console.log("server startedat port 4000")
+console.log({ url })
